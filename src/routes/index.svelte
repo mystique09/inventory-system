@@ -1,8 +1,12 @@
 <script>
 	import { session } from '$app/stores';
-	console.log($session);
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-Session: {$session}
+<p>Session: {JSON.stringify($session)}</p>
+{#if $session != null}
+	<h1>You are authenticated!</h1>
+	<p>Welcome to Dashboard</p>
+{:else}
+	<h1>Not authenticated.</h1>
+	<p>Click here to get authenticated: <a href="/auth">Sign In</a></p>
+{/if}

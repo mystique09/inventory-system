@@ -1,5 +1,6 @@
+import { serialize } from "cookie";
 
-export async function get() {
+export async function post() {
   let data = {
     "username": "testuser",
     "email": "testemail@email.com",
@@ -7,8 +8,13 @@ export async function get() {
   };
 
   return {
+    status: 200,
     headers: {
-      "set-cookie": [`user=${data.username}; Path=/*; Max-Age=${Date.now() * 60 * 60 * 24 * 7};`]
+      "Set-Cookie": serialize("auth", JSON.stringify(data), {
+        path: "/",
+        maxAge: 60 * 60 * 24 * 7,
+        httpOnly: true,
+      })
     },
     body: {
       data
