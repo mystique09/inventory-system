@@ -1,8 +1,7 @@
-
 export async function get() {
-  return {
-    body: {
-      data: "Inventory System.",
-    }
-  }
+	return {
+		body: {
+			data: 'Inventory System.'
+		}
+	};
 }
