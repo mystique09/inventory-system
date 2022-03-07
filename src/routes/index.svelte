@@ -10,3 +10,4 @@
 	<h1>Not authenticated.</h1>
 	<p>Click here to get authenticated: <a href="/auth">Sign In</a></p>
 {/if}
+
