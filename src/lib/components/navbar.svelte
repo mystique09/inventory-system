@@ -1,5 +1,5 @@
 <script>
-	import { goto } from '$app/navigation';
+	//import { goto } from '$app/navigation';
 
 	import { session } from '$app/stores';
 	let toggleNav = false;
@@ -18,8 +18,7 @@
 
 		let data = await res.json();
 		if (data) {
-			window.location.replace('/auth');
-			goto(window.location.href);
+			window.location.reload();
 		}
 	}
 </script>
