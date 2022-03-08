@@ -54,7 +54,7 @@
 	}
 
 	.nav_links {
-		@apply hidden rounded-md absolute right-2 text-gray-50 font-bold top-16 flex flex-col items-center justify-between bg-blue-500 w-[150px] py-2 px-4 gap-2;
+		@apply hidden rounded-md absolute right-2 text-gray-50 font-bold top-16 flex-col items-center justify-between bg-blue-500 w-[150px] py-2 px-4 gap-2;
 	}
 
 	.menu {
