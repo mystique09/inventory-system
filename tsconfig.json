@@ -46,5 +46,4 @@
     "src/**/*.ts",
     "src/**/*.svelte"
   ],
-  "extends": "./.svelte-kit/tsconfig.json"
 }
