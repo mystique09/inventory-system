@@ -25,7 +25,7 @@
 
 <style lang="postcss">
 	main {
-		@apply max-w-4xl h-screen;
+		@apply max-w-4xl h-screen m-auto;
 	}
 	.wrap {
 		@apply flex flex-col gap-4 items-center justify-start h-full;
