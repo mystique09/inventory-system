@@ -46,11 +46,11 @@
 
 <style lang="postcss">
 	.nav {
-		@apply flex flex-row items-center justify-between px-2 bg-orange-400 text-white h-20;
+		@apply flex flex-row items-center justify-between px-2 bg-black text-white h-20;
 	}
 
 	.logo {
-		@apply font-bold text-xl;
+		@apply font-bold text-xl text-orange-400;
 	}
 
 	.nav_links {
