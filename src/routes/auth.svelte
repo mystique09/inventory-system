@@ -69,7 +69,7 @@
 		@apply font-light pb-2;
 	}
 	.input-wrapper input[type=text], input[type=password] {
-		@apply focus:ring focus:ring-orange-500 hover:border-none outline-none rounded-md py-4 px-12 text-left;
+		@apply focus:ring focus:ring-orange-500 hover:border-none outline-none rounded-md py-4 px-10 text-left;
 	}
 	#submit {
 		@apply bg-orange-300 rounded-md px-24 py-4 m-4;
