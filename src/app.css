@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
