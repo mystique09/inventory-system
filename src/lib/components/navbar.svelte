@@ -45,7 +45,7 @@
 
 <style lang="postcss">
 	.nav {
-		@apply flex flex-row items-center justify-between px-2 bg-black text-white h-20;
+		@apply w-screen m-auto flex flex-row items-center justify-between px-2 bg-black text-white h-20;
 	}
 
 	.logo {
