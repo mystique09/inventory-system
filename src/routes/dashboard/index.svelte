@@ -12,24 +12,6 @@
 	}
 </script>
 
-<script>
-	let toggle = false;
-	function toggleSidebar() {
-		toggle = !toggle;
-		console.log(toggle)
-	}
-</script>
-
-<main>
-	<div class="wrap">
-		<div class="sidebar">
-			<h2 on:click={toggleSidebar}>Navigation</h2>
-			<ul class="pages" class:hidden={!toggle}>
-				<li><a href="/">Dashboard</a></li>
-				<li><a href="/dashboard/location">Location</a></li>
-				<li><a href="/dashboard/inventory">Inventory</a></li>
-			</ul>
-		</div>
 		<div class="dashboard">
 			<div class="product-stock-cards">
 				<h2>Dashboard</h2>
@@ -46,30 +28,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
-</main>
 
 <style lang="postcss">
-	main {
-		@apply m-auto bg-gray-50 h-screen;
-	}
-	.wrap {
-		@apply h-full flex flex-col md:flex-row items-start md:justify-between justify-evenly;
-	}
-	.sidebar {
-		@apply w-full md:w-auto md:h-screen p-4 pt-10;
-	}
-	.sidebar h2 {
-		@apply font-bold text-base md:text-lg cursor-pointer;
-	}
-	.sidebar .pages {
-		@apply flex-col gap-8 mt-10 h-1/2;
-	}
-	a {
-		@apply hover:underline hover:text-orange-500;
-	}
 	.dashboard {
-		@apply p-4 md:px-10 h-full w-full flex flex-col items-start justify-between;
+		@apply m-auto bg-gray-50 p-4 md:px-10 h-full w-full flex flex-col items-start justify-between;
 	}
 	.dashboard .product-stock-cards {
 		@apply h-1/2;
