@@ -3,12 +3,12 @@
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
 }
 
 #svelte {
-    @apply h-screen;
+	@apply h-screen;
 }
 
 /* Write your global styles here, in PostCSS syntax */

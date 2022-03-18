@@ -85,4 +85,3 @@
 		@apply underline text-orange-500;
 	}
 </style>
-

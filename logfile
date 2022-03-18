@@ -1,0 +1,13 @@
+2022-03-12 22:05:30.434 PST [29923] LOG:  starting PostgreSQL 14.2 on aarch64-unknown-linux-android, compiled by Android (7714059, based on r416183c1) clang version 12.0.8 (https://android.googlesource.com/toolchain/llvm-project c935d99d7cf2016289302412d708641d52d2f7ee), 64-bit
+2022-03-12 22:05:30.435 PST [29923] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2022-03-12 22:05:30.437 PST [29923] LOG:  listening on Unix socket "/data/data/com.termux/files/usr/tmp/.s.PGSQL.5432"
+2022-03-12 22:05:30.450 PST [29927] LOG:  database system was interrupted; last known up at 2022-03-11 14:53:56 PST
+2022-03-12 22:05:31.543 PST [29927] LOG:  database system was not properly shut down; automatic recovery in progress
+2022-03-12 22:05:31.547 PST [29927] LOG:  redo starts at 0/20B6CF8
+2022-03-12 22:05:31.547 PST [29927] LOG:  invalid record length at 0/20B6DE0: wanted 24, got 0
+2022-03-12 22:05:31.547 PST [29927] LOG:  redo done at 0/20B6DA8 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2022-03-12 22:05:31.606 PST [29923] LOG:  database system is ready to accept connections
+2022-03-12 22:06:20.193 PST [30309] ERROR:  relation "Users" does not exist at character 15
+2022-03-12 22:06:20.193 PST [30309] STATEMENT:  SELECT * FROM "Users";
+2022-03-12 22:06:28.135 PST [30309] ERROR:  relation "User" does not exist at character 15
+2022-03-12 22:06:28.135 PST [30309] STATEMENT:  SELECT * FROM "User";
