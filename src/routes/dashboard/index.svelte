@@ -12,22 +12,22 @@
 	}
 </script>
 
-		<div class="dashboard">
-			<div class="product-stock-cards">
-				<h2>Dashboard</h2>
-				<div class="card"></div>
-				<div class="card"></div>
-				<div class="card"></div>
-			</div>
-			<div class="chart">
-				<h2>Chart</h2>
-				<div class="chart-cards">
-					<div class="chart-card"></div>
-					<div class="chart-card"></div>
-					<div class="chart-card"></div>
-				</div>
-			</div>
+<div class="dashboard">
+	<div class="product-stock-cards">
+		<h2>Dashboard</h2>
+		<div class="card" />
+		<div class="card" />
+		<div class="card" />
+	</div>
+	<div class="chart">
+		<h2>Chart</h2>
+		<div class="chart-cards">
+			<div class="chart-card" />
+			<div class="chart-card" />
+			<div class="chart-card" />
 		</div>
+	</div>
+</div>
 
 <style lang="postcss">
 	.dashboard {
@@ -40,7 +40,7 @@
 		@apply h-1/2;
 	}
 	.dashboard h2,
-	 .chart h2 {
+	.chart h2 {
 		@apply font-bold text-xl md:text-3xl;
 	}
 </style>
