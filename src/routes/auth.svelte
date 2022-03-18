@@ -54,7 +54,7 @@
 
 <style lang="postcss">
 	main {
-		@apply max-w-4xl mt-16 h-full flex flex-col justify-center m-auto;
+		@apply max-w-2xl h-full flex flex-col justify-center m-auto;
 	}
 	form {
 		@apply m-auto w-[98%] p-8 rounded-md flex flex-col items-center justify-center bg-orange-100;
@@ -79,7 +79,7 @@
 		@apply p-2 text-red-700;
 	}
 	.info {
-		@apply pt-4;
+		@apply pt-4 text-sm md:text-base;
 	}
 	a {
 		@apply underline text-orange-500;
