@@ -58,7 +58,7 @@
 
 <style lang="postcss">
 	main {
-		@apply max-w-4xl mt-5 h-full flex flex-col justify-center m-auto;
+		@apply max-w-2xl h-full flex flex-col justify-center m-auto;
 	}
 	form {
 		@apply m-auto w-[98%] py-8 rounded-md flex flex-col items-center justify-center bg-orange-100;
@@ -67,7 +67,7 @@
 		@apply font-bold text-orange-400 text-2xl mb-8;
 	}
 	.input-wrapper {
-		@apply flex flex-col items-start justify-start p-2 w-full;
+		@apply flex flex-col items-start justify-start p-2;
 	}
 	.input-wrapper label {
 		@apply font-light pb-2 text-sm;
@@ -84,7 +84,7 @@
 		@apply p-2 text-red-700;
 	}
 	.info {
-		@apply pt-4;
+		@apply pt-4 md:text-base;
 	}
 	a {
 		@apply underline text-orange-500;
