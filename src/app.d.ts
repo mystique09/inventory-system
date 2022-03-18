@@ -11,3 +11,17 @@ declare namespace App {
 
 	interface Stuff {}
 }
+
+interface Product {
+	name: string;
+	price: number;
+	stock: number;
+	status: boolean;
+	owner: User;
+}
+
+interface User {
+	id: number;
+	username: string;
+	email: string;
+}
