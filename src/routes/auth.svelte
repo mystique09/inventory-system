@@ -12,22 +12,34 @@
 	}
 </script>
 
-<script>
-	let error = '';
+<script lang="ts">
+	let username: string = '';
+	let password: string = '';
+
+	let error: string = '';
+	let isLoading: boolean = false;
+
 	async function submitForm() {
-		let res = await fetch('http://localhost:3000/api/auth', {
+		isLoading = true;
+		let res = await fetch('http://localhost:8000/auth', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json'
-			}
+			},
+			body: JSON.stringify({
+				username,
+				password
+			})
 		});
 
 		const data = await res.json();
-		if (data) {
-			window.location.reload();
+		isLoading = false;
+		if (res.status !== 200) {
+			error = data;
 			return;
 		}
-		error = data.error;
+		window.location.reload();
+		return;
 	}
 </script>
 
@@ -36,16 +48,17 @@
 		<h1>Welcome Back!</h1>
 		<div class="input-wrapper">
 			<label for="username">Username</label>
-			<input type="text" name="username" id="username" />
+			<input type="text" name="username" id="username" required bind:value={username} />
 		</div>
 		<div class="input-wrapper">
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password" />
+			<input type="password" name="password" id="password" required bind:value={password} />
 		</div>
+
 		<div class="error">
 			{error}
 		</div>
-		<button id="submit" type="submit">Login</button>
+		<button class:disabled={isLoading} id="submit" type="submit">Login</button>
 		<div class="info">
 			Doesn't have an account? <a href="/signup">Sign Up</a>
 		</div>
